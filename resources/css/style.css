@@ -69,3 +69,41 @@ nav a {
   font-size: 1rem;
   color: #4a4a4a;*/
 }
+
+ /*Main Content*/
+ .main-content {
+   position: relative;
+   padding-top: 4rem;
+
+ }
+
+/* Banner section */
+.banner {
+  display: flex;
+}
+
+.banner .left {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.banner .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+  width: 40%
+}
+
+#main {
+  background-color: lightgray;
+}
+
+#main a {
+  width: 60%;
+  background-color: darkgray;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
