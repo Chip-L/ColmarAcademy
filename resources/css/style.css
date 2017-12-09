@@ -70,7 +70,7 @@ html {
   width: 65%;
 }
 
-/* Header section */
+/* Header/Footer section */
 header {
   position: fixed;
   z-index: 10;
@@ -83,7 +83,17 @@ header {
   background-color: white;
 }
 
-header .logo {
+footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
@@ -98,11 +108,13 @@ header .logo {
   width: auto;
 }
 
-header nav {
+
+nav {
   margin-right: 1.5rem;
 }
 
-header nav ul {
+/*header */
+nav ul {
   display: inline-flex;
 }
 
