@@ -70,6 +70,23 @@ html {
   width: 65%;
 }
 
+@media only screen and (max-width: 575px) {
+  .banner{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .banner .left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner .right {
+    width: 100%;
+  }
+
+}
+
 /* Header/Footer section */
 header {
   position: fixed;
@@ -150,6 +167,10 @@ nav a {
   nav ul {
     justify-content: space-around;
   }
+
+  nav li {
+    padding: 0;
+  }
 }
 
 /*Main Content*/
@@ -167,6 +188,14 @@ nav a {
   background-color: lightgray;
 }
 
+#main h1 {
+  margin-bottom: 2rem;
+}
+
+#main h2 {
+  margin-bottom: 1.5rem;
+}
+
 #main a {
   width: 60%;
   background-color: darkgray;
@@ -174,6 +203,17 @@ nav a {
   color: white;
   text-decoration: none;
   padding: 0.5rem 0;
+}
+
+@media only screen and (max-width: 575px) {
+  #main .right {
+    padding: 2rem 1rem;
+  }
+
+  #main a {
+    width: 90%;
+    margin-right: auto;
+  }
 }
 
 /* info banner */
