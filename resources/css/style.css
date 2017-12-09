@@ -9,7 +9,7 @@ html {
   font-size: 16px;
 }
 
-.tablet {
+.mobile-show {
   display: none;
 }
 
@@ -119,6 +119,7 @@ nav {
 /*header */
 nav ul {
   display: inline-flex;
+  width: 100%;
 }
 
 nav li {
@@ -130,6 +131,25 @@ nav a {
   /*line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;*/
+}
+
+@media only screen and (max-width: 575px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  .mobile-show {
+    display: inherit;
+  }
+
+  nav {
+    width: 100%;
+    margin: auto;
+  }
+
+  nav ul {
+    justify-content: space-around;
+  }
 }
 
 /*Main Content*/
