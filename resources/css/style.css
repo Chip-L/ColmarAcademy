@@ -32,6 +32,44 @@ html {
   width: inherit;
 }
 
+/* Banner sections with universal tools*/
+.banner {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.banner-title {
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.banner .left {
+  width: 60%;
+  padding: 0 1.5rem;
+}
+
+.banner .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-container .left {
+  width: 35%;
+  padding: 1rem;
+}
+
+.info-container .right {
+  width: 65%;
+}
+
 /* Header section */
 header {
   position: fixed;
@@ -79,61 +117,14 @@ nav a {
   color: #4a4a4a;*/
 }
 
- /*Main Content*/
- .main-content {
-   position: relative;
-   padding-top: 4rem;
+/*Main Content*/
+.main-content {
+  position: relative;
+  padding-top: 4rem;
 
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
-
-/* Banner sections with universal tools*/
-.banner {
-  display: flex;
-  padding: 2rem 0;
-}
-
-.banner-title {
-  text-align: center;
-  width: 100%;
-  margin-top: 2rem;
-}
-
-.banner .left {
-  width: 60%;
-  padding: 0 1.5rem;
-}
-
-.banner .right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 40%;
-}
-
-.info-container {
-  display: flex;
-  justify-content: center;
-}
-
-.info-container .left {
-  width: 35%;
-  padding: 1rem;
-}
-
-.info-container .right {
-  width: 65%;
-}
-
-.curriculum-container {
-  display: flex;
-  flex-direction: column;
-
-  flex: 1 1 29%;
-  margin: 1rem;
-  background-color: white;
+  align-items: center;
 }
 
 /* main banner */
@@ -164,9 +155,6 @@ nav a {
 }
 
 /* thesis banner */
-/*#thesis h1 {
-}*/
-
 #thesis .left .text h3 {
   margin-top: 1.5rem;
 }
@@ -191,4 +179,13 @@ nav a {
 
 #curriculum .courses {
   padding: 0.5rem 0;
+}
+
+.curriculum-container {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1 1 29%;
+  margin: 1rem;
+  background-color: white;
 }
