@@ -88,7 +88,7 @@ nav a {
    align-items: center;
  }
 
-/* Banner sections */
+/* Banner sections with universal tools*/
 .banner {
   display: flex;
 }
@@ -101,11 +101,27 @@ nav a {
 .banner .right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 40%
+  width: 40%;
+  margin-top: 1rem;
 }
 
-/* #main banner */
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.info-container .left {
+  width: 35%;
+  padding: 1rem;
+}
+
+.info-container .right {
+  width: 65%;
+}
+
+/* main banner */
 #main {
   background-color: lightgray;
 }
@@ -132,18 +148,21 @@ nav a {
   /*margin-top: 1.5rem;*/
 }
 
-.info-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
+/* thesis banner */
+#thesis {
+  background-color: lightgray;
 }
 
-.info-container .left {
-  width: 35%;
-  padding: 1rem;
+#thesis h1 {
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
 }
 
-.info-container .right {
-  width: 65%;
+#thesis .left .text h3 {
+  margin-top: 1.5rem;
+}
+
+#thesis .left .text p {
+  margin-top: 0.5rem;
 }
