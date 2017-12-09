@@ -108,6 +108,9 @@ footer {
   width: auto;
 }
 
+.logo span:first-child {
+  font-weight: bold;
+}
 
 nav {
   margin-right: 1.5rem;
