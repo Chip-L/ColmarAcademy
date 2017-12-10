@@ -183,12 +183,15 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 1050px;
+  margin: auto;
 }
 
 
 @media only screen and (max-width: 575px) {
   .main-content {
     padding-top: 0;
+    width: 100%;
   }
 }
 
