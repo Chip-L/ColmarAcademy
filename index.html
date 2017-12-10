@@ -38,7 +38,8 @@
   <!-- /desktop header -->
 
   <!-- mobile header -->
-  <!-- By creating a second header, it made the code easier to read. The first try wsa to just add a second <ul> for the items. but I had troubles with formatting them in the @media and the mobile-hide tags weren't working correctly. This made it all much cleaner. -->
+  <!-- By creating a second header, it made the code easier to read. The first try was to just add a second <ul> for the items. but I had troubles with formatting them in the @media and the mobile-hide tags weren't working correctly. This made it all much cleaner.
+  I also was having a lot of problems with getting the header to fit the width of the mobile screen. I decided to set the position: relative so that it would fit (this is also a common mobile design because of the little amount of space). I couldn't seem to find the problem with why it was hanging off the edge. I think on later reflection, that it wasn't the header at all but the content in the main banner and the header was just fulling the space that caused. -->
   <header class="mobile-show">
     <a href="#">
       <img src="resources\images\ic-logo.svg" alt="logo">
@@ -56,11 +57,11 @@
   <!-- /mobile header> -->
 
   <!-- main content -->
-  <!-- I was going to leave this unsized so it would be responsive on all browsers. However on extreme width's the pictures grew too large for the text. -->
+  <!-- I was going to leave this without a size so it would be responsive on all browsers. However, on extreme width's the pictures grew too large for the text. -->
   <div class="main-content">
     <!-- main banner -->
     <div class="banner" id="main">
-      <!-- bannter title - not used -->
+      <!-- banner title - not used -->
       <div class="left">
         <div class="image-container">
           <img src="resources\images\banner.jpg" alt="students studying">
@@ -82,7 +83,7 @@
 
     <!-- info banner -->
     <div class="banner" id="info">
-      <!-- bannter title - not used -->
+      <!-- banner title - not used -->
       <!-- TODO?: refactor css so that there are better controls for the right/left percentages -->
       <div class="left mobile-hide">
         <div class="image-container">
@@ -92,12 +93,11 @@
         <div class="text">
           <h1>It doesn't hurt to keep practicing</h1>
           <p>&quot;Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.&quot;</p>
-          <p class="author">Emmanual, Sr Stratagist at Hiring.com</p>
+          <p class="author">Emanuel, Sr Strategist at Hiring.com</p>
         </div>
         <!-- /text -->
       </div>
       <!-- /info left -->
-
       <div class="right">
         <!-- Orientation -->
         <div class="info-container">
@@ -111,7 +111,7 @@
             <h4>Tues 10/11 & Wed 10/12: 8am-3pm</h4>
             <a href="#">Read more</a>
           </div>
-          <!-- /right -->
+          <!-- /info-container right -->
         </div>
         <!-- /Orientation info-container -->
 
@@ -127,7 +127,7 @@
             <h4>Find which campus is close by you</h4>
             <a href="#">Read more</a>
           </div>
-          <!-- /right -->
+          <!-- /info-container right -->
         </div>
         <!-- /campus info-container -->
 
@@ -143,7 +143,7 @@
             <h4>Join a keynote with Oliver Sack about music in medical treatment</h4>
             <a href="#">Read more</a>
           </div>
-          <!-- /right -->
+          <!-- /info-container right -->
         </div>
         <!-- /guest lecture info-container -->
 
@@ -160,7 +160,7 @@
       <!-- /curriculum banner-title -->
 
       <!-- desktop curriculum banner -->
-      <!-- Adding a div for the mobile-show/hide didn't add anything to the size. It also put the specificty of the tag at the appropriate level; I couldn't hide the mobile list otherwise. -->
+      <!-- Adding a div for the mobile-show/hide didn't add anything to the size. It also put the specificity of the tag at the appropriate level; I couldn't hide the mobile list otherwise. -->
       <div class="mobile-hide">
         <div class="banner">
 
@@ -184,7 +184,7 @@
             <div class="text">
               <h3>Computer art</h3>
               <p class="courses">COURSES</p>
-              <p>Web Development, Mobile Development, iOT, APIs</p>
+              <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
             </div>
           </div>
 
@@ -196,7 +196,7 @@
             <div class="text">
               <h3>Design</h3>
               <p class="courses">COURSES</p>
-              <p>User Expierence Deisgn, User Research, Visual Design</p>
+              <p>User Experience Design, User Research, Visual Design</p>
             </div>
           </div>
 
@@ -235,7 +235,9 @@
               <p>Analytics, Content Marketing, Mobile Marketing</p>
             </div>
           </div>
+
         </div>
+        <!-- /curriculum banner -->
       </div>
       <!-- /desktop curriculum banner -->
 

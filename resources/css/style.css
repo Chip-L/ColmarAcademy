@@ -1,7 +1,6 @@
-/* Fonts */
+/*********************************** Fonts  ***********************************/
 
-
-/* Universal Styles */
+/****************************** Universal Styles ******************************/
 
 html {
   font-family: Helvetica;
@@ -29,7 +28,17 @@ html {
   width: inherit;
 }
 
-/* Banner sections with universal tools*/
+@media only screen and (max-width: 575px) {
+  .mobile-hide {
+    display: none;
+  }
+  .mobile-show {
+    display: inherit;
+  }
+}
+
+/******************** Banner sections with universal tools ********************/
+
 .banner {
   display: flex;
   padding: 2rem 0;
@@ -72,41 +81,35 @@ html {
 }
 
 @media only screen and (max-width: 575px) {
-  .banner{
+  .banner {
     flex-direction: column;
     padding: 0;
   }
-
   .banner .left {
     width: 100%;
     padding: 0;
   }
-
   .banner .right {
     width: inherit;
   }
-
   .info-container {
     flex-direction: column;
-
     margin: 2rem 1rem;
   }
-
   .info-container .image-container {
     width: 100%;
     padding: 0;
   }
 }
 
-/* Header/Footer section */
+/*************************** Header/Footer section  ***************************/
+
 header {
   position: fixed;
   z-index: 10;
-
   display: flex;
   align-items: center;
   margin: auto;
-
   width: 100%;
   height: 4rem;
   background-color: white;
@@ -117,7 +120,6 @@ footer {
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
-
   width: 100%;
   background-color: white;
 }
@@ -127,7 +129,6 @@ footer {
   justify-content: flex-start;
   align-items: center;
   flex-grow: 1;
-
   margin-left: 1.5rem;
 }
 
@@ -163,33 +164,29 @@ nav a {
 @media only screen and (max-width: 575px) {
   header.mobile-show {
     position: relative;
-
     display: flex;
     justify-content: space-around;
   }
-
   header a img {
     height: 2rem;
     width: auto;
   }
-
   footer {
     margin-bottom: 1rem;
   }
 }
 
-/*Main Content*/
+/******************************** Main Content ********************************/
+
 .main-content {
   position: relative;
   padding-top: 4rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 1050px;
   margin: auto;
 }
-
 
 @media only screen and (max-width: 575px) {
   .main-content {
@@ -198,7 +195,8 @@ nav a {
   }
 }
 
-/* main banner */
+/************ Main Banner  ************/
+
 #main {
   background-color: lightgray;
 }
@@ -224,7 +222,6 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: darkgray;
   margin-right: 25%;
   min-height: 2rem;
@@ -234,13 +231,13 @@ nav a {
   #main .right {
     padding: 2rem 1rem;
   }
-
   .start-button {
     margin: 0;
   }
 }
 
-/* info banner */
+/************ Info Banner  ************/
+
 #info .left .text h1 {
   margin-top: 2rem;
 }
@@ -260,6 +257,7 @@ nav a {
 }
 
 /* thesis banner */
+
 #thesis .left .text h3 {
   margin-top: 1.5rem;
 }
@@ -273,13 +271,13 @@ nav a {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
   }
-
   #thesis .banner .right {
     display: none;
   }
 }
 
-/* curriculum */
+/********* Curriculum Banner  *********/
+
 #curriculum {
   background-color: lightgray;
   width: 100%;
@@ -302,7 +300,6 @@ nav a {
 .curriculum-container {
   display: flex;
   flex-direction: column;
-
   flex: 1 1 29%;
   margin: 1rem;
   background-color: white;
@@ -312,37 +309,20 @@ nav a {
   #curriculum {
     background-color: inherit;
   }
-
   #curriculum .banner {
     padding: 0;
   }
-
   .banner ul {
     display: flex;
     flex-direction: column;
-
     margin: 1rem;
   }
-
   .banner li {
     padding: 1rem 0 1.5rem 1rem;
     background-color: lightgray;
     margin-bottom: 0.5rem;
   }
-
   .banner li:last-child {
     margin-bottom: 1rem;
   }
-}
-
-
-@media only screen and (max-width: 575px) {
-  .mobile-hide {
-    display: none;
-  }
-
-  .mobile-show {
-    display: inherit;
-  }
-
 }
