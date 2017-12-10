@@ -18,15 +18,15 @@
 </head>
 
 <body>
-  <!-- header -->
-  <header>
-    <div class="logo mobile-hide">
+  <!-- desktop header -->
+  <header class="mobile-hide">
+    <div class="logo">
       <img src="resources\images\ic-logo.svg" alt="logo">
       <div class="logo-name">
         <span>Colmar</span><span>Academy</span>
       </div>
     </div>
-    <nav class="mobile-hide">
+    <nav>
       <ul>
         <li><a href="#">On campus</a></li>
         <li><a href="#">Online</a></li>
@@ -34,23 +34,25 @@
         <li><a href="#">Sign in</a></li>
       </ul>
     </nav>
-    <nav class="mobile-show">
-      <ul>
-        <li>
-          <img src="resources\images\ic-logo.svg" alt="logo">
-        </li>
-        <li><a href="#">
-            <img src="resources\images\ic-on-campus.svg" alt="On campus">
-          </a></li>
-        <li><a href="#">
-            <img src="resources\images\ic-online.svg" alt="Online">
-          </a></li>
-        <li><a href="#">
-            <img src="resources\images\ic-login.svg" alt="Sign in">
-          </a></li>
-      </ul>
-    </nav>
   </header>
+  <!-- /desktop header -->
+
+  <!-- mobile header -->
+  <header class="mobile-show">
+    <a href="#">
+      <img src="resources\images\ic-logo.svg" alt="logo">
+    </a>
+    <a href="#">
+      <img src="resources\images\ic-on-campus.svg" alt="On campus">
+    </a>
+    <a href="#">
+      <img src="resources\images\ic-online.svg" alt="Online">
+    </a>
+    <a href="#">
+      <img src="resources\images\ic-login.svg" alt="Sign in">
+    </a>
+  </header>
+  <!-- /mobile header> -->
 
   <!-- main content -->
   <div class="main-content">
