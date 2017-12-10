@@ -49,7 +49,6 @@ html {
 .banner .right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 40%;
 }
 
@@ -64,7 +63,12 @@ html {
 }
 
 .info-container .right {
+  justify-content: center;
   width: 65%;
+}
+
+.info-container .image-container:first-child {
+  padding-top: 0;
 }
 
 @media only screen and (max-width: 575px) {
@@ -187,6 +191,10 @@ nav a {
   background-color: lightgray;
 }
 
+#main .right {
+  justify-content: center;
+}
+
 #main h1 {
   margin-bottom: 2rem;
 }
@@ -297,8 +305,6 @@ nav a {
     flex-direction: column;
 
     margin: 1rem;
-
-    border: 1px solid pink;
   }
 
   .banner li {
