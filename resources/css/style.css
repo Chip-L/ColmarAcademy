@@ -247,6 +247,7 @@ nav a {
 /* curriculum */
 #curriculum {
   background-color: lightgray;
+  width: 100%;
 }
 
 #curriculum .banner {
@@ -259,6 +260,7 @@ nav a {
 }
 
 #curriculum .courses {
+  width: 100%;
   padding: 0.5rem 0;
 }
 
@@ -269,6 +271,35 @@ nav a {
   flex: 1 1 29%;
   margin: 1rem;
   background-color: white;
+}
+
+@media only screen and (max-width: 575px) {
+  #curriculum {
+    background-color: inherit;
+  }
+
+  #curriculum .banner {
+    padding: 0;
+  }
+
+  .banner ul {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 1rem;
+
+    border: 1px solid pink;
+  }
+
+  .banner li {
+    padding: 1rem 0 1.5rem 1rem;
+    background-color: lightgray;
+    margin-bottom: 0.5rem;
+  }
+
+  .banner li:last-child {
+    margin-bottom: 1rem;
+  }
 }
 
 
