@@ -168,10 +168,13 @@ nav a {
     justify-content: space-around;
   }
 
-
   header a img {
     height: 2rem;
     width: auto;
+  }
+
+  footer {
+    margin-bottom: 1rem;
   }
 }
 
