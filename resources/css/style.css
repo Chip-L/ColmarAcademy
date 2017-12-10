@@ -170,12 +170,12 @@ footer {
 }
 
 .logo span:first-child {
-  font-weight: 900;
+  font-weight: 700;
+  opacity: 0.8; /* softens this a little bit so the blue stands out better */
 }
 
 .logo span:last-child {
   color: #3E9CCA;
-  font-weight: 700;
 }
 
 nav {
