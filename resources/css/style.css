@@ -244,6 +244,17 @@ nav a {
   margin-top: 0.5rem;
 }
 
+@media only screen and (max-width: 575px) {
+  #thesis .banner {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #thesis .banner .right {
+    display: none;
+  }
+}
+
 /* curriculum */
 #curriculum {
   background-color: lightgray;
@@ -285,7 +296,7 @@ nav a {
   .banner ul {
     display: flex;
     flex-direction: column;
-    
+
     margin: 1rem;
 
     border: 1px solid pink;
