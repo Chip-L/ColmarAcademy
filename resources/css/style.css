@@ -83,7 +83,7 @@ html {
   }
 
   .banner .right {
-    width: 100%;
+    width: inherit;
   }
 
   .info-container {
@@ -183,7 +183,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1050px;
+  max-width: 1050px;
   margin: auto;
 }
 
@@ -213,12 +213,18 @@ nav a {
 }
 
 #main a {
-  width: 60%;
-  background-color: darkgray;
-  text-align: center;
   color: white;
   text-decoration: none;
-  padding: 0.5rem 0;
+}
+
+.start-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: darkgray;
+  margin-right: 25%;
+  min-height: 2rem;
 }
 
 @media only screen and (max-width: 575px) {
@@ -226,9 +232,8 @@ nav a {
     padding: 2rem 1rem;
   }
 
-  #main a {
-    width: 90%;
-    margin-right: auto;
+  .start-button {
+    margin: 0;
   }
 }
 
