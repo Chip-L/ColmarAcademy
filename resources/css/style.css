@@ -1,3 +1,7 @@
+/* TODO: fonts */
+/* TODO: font line spacing */
+/* TODO: ARIA */
+
 /* colors: School colors are baby blue (#89cff0) and black (#000000) - "arbitrarily" chosen by me since it wasn't specificied. (My school's colors.) Color palets used were http://paletton.com/#uid=13s0u0kesVS1Q+U8OZ7jaQWnkJ1
 and http://paletton.com/#uid=1000u0k00000nfW028N8N02fW0n.
 
@@ -7,29 +11,98 @@ white = #F1FAFF
 lightgray = #B8E4FA
 darkgray = #3E9CCA
 
+For the fonts, I wanted something professional and classic, but unique. This is a school being represented... I chose a Serif font as the primary font because it draws the eye better. I wanted the headings to be bold and stand out. Going for a sans-serif font for the text made it readable while not as overbearing. This is additional information. Looking at a number of other school sites, they semed to follow the same ideas. There was plenty of variation though so it isn't like this is copying someone elses. A school can't have a hint of plagurisim! (BTW, MIT (http://web.mit.edu/) has the worst site I think I've ever seen!)
 
+The Kreon font appealed to me. It had enough of a unique charactistic without being too devient from a more traditional font. (It also had the correct styles available!). I confess I didn't shop too much for a pairing sans-serif font. The Open Sans was recommended and I thought it looked good so I went with it.
+*/
 
 /*********************************** Fonts  ***********************************/
-a {
-  text-decoration: none;
+/* Kreon */
+/* latin */
+@font-face {
+  font-family: 'Kreon';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Kreon Light'), local('Kreon-Light'), url(https://fonts.gstatic.com/s/kreon/v11/76aS1J5Mmu41iLp2Z15uBfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Kreon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kreon Regular'), local('Kreon-Regular'), url(https://fonts.gstatic.com/s/kreon/v11/gK2DcrR6Rzx5Ga9PpDfp3A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Kreon';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Kreon Bold'), local('Kreon-Bold'), url(https://fonts.gstatic.com/s/kreon/v11/xjKCXsEUnBvIKKUiQZ3MtfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+/* Open Sans */
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v15/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
 h1 {
+  font-family: Kreon, Helvetica;
   font-size: 2rem;
   font-weight: bold;
 }
 
 h2 {
+  font-family: Kreon, Helvetica;
   font-size: 1.5rem;
 }
 
 p {
+  font-family: Open Sans, Helvetica;
   opacity: 0.5; /* opacity controls the lightness of the text. "lighter" didn't work */
 }
+
+a {
+  text-decoration: none;
+  font-family: Open Sans, Helvetica;
+}
+
 /****************************** Universal Styles ******************************/
 
 html {
-  font-family: Helvetica;
+  font-family: Kreon, Helvetica;
   font-size: 16px;
 }
 
@@ -62,6 +135,7 @@ body {
   .mobile-hide {
     display: none;
   }
+
   .mobile-show {
     display: inherit;
   }
