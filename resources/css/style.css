@@ -92,6 +92,8 @@ h2 {
 p {
   font-family: Open Sans, Helvetica;
   opacity: 0.5; /* opacity controls the lightness of the text. "lighter" didn't work */
+  line-height: 1.4;
+  margin: 0.5rem 0;
 }
 
 a {
@@ -182,8 +184,9 @@ body {
   width: 65%;
 }
 
-.info-container .image-container:first-child {
-  padding-top: 0;
+.info-container a {
+    color: #3E9CCA;
+    opacity: 1;
 }
 
 @media only screen and (max-width: 575px) {
@@ -191,17 +194,21 @@ body {
     flex-direction: column;
     padding: 0;
   }
+
   .banner .left {
     width: 100%;
     padding: 0;
   }
+
   .banner .right {
     width: inherit;
   }
+
   .info-container {
     flex-direction: column;
     margin: 2rem 1rem;
   }
+
   .info-container .image-container {
     width: 100%;
     padding: 0;
@@ -266,23 +273,18 @@ li {
   padding-left: 1rem;
 }
 
-nav a {
-  vertical-align: bottom;
-  /*line-height: 1.6;
-  font-size: 1rem;
-  color: #4a4a4a;*/
-}
-
 @media only screen and (max-width: 575px) {
   header.mobile-show {
     position: relative;
     display: flex;
     justify-content: space-around;
   }
+
   header a img {
     height: 2rem;
     width: auto;
   }
+
   footer {
     margin-bottom: 1rem;
   }
@@ -326,8 +328,8 @@ nav a {
 }
 
 #main a {
+  margin: 0.5rem 0;
   color: #F1FAFF;
-  text-decoration: none;
 }
 
 .start-button {
@@ -352,6 +354,7 @@ nav a {
   #main .right {
     padding: 2rem 1rem;
   }
+
   .start-button {
     margin: 0;
   }
@@ -368,7 +371,16 @@ nav a {
 }
 
 #info .left .text .author {
-  /*margin-top: 1.5rem;*/
+  font-size: .8rem;
+  opacity: 7;
+}
+
+#info .info-container:first-child {
+  margin-top: -1rem;
+}
+
+#info .info-container:last-child {
+  background-color: #B8E4FA;
 }
 
 @media only screen and (max-width: 575px) {
@@ -392,6 +404,7 @@ nav a {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
   }
+
   #thesis .banner .right {
     display: none;
   }
@@ -413,11 +426,6 @@ nav a {
   padding: 1rem 1rem 1.5rem 1rem;
 }
 
-#curriculum .courses {
-  width: 100%;
-  padding: 0.5rem 0;
-}
-
 .curriculum-container {
   display: flex;
   flex-direction: column;
@@ -426,23 +434,31 @@ nav a {
   background-color: #F1FAFF;
 }
 
+.curriculum-container p:last-child {
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 575px) {
   #curriculum {
     background-color: inherit;
   }
+
   #curriculum .banner {
     padding: 0;
   }
+
   .banner ul {
     display: flex;
     flex-direction: column;
     margin: 1rem;
   }
+
   .banner li {
     padding: 1rem 0 1.5rem 1rem;
     background-color: #B8E4FA;
     margin-bottom: 0.5rem;
   }
+  
   .banner li:last-child {
     margin-bottom: 1rem;
   }
