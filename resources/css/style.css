@@ -1,4 +1,3 @@
-/* TODO: font line spacing */
 /* TODO: ARIA */
 
 /* colors: School colors are baby blue (#89cff0) and black (#000000) - "arbitrarily" chosen by me since it wasn't specificied. (My school's colors.) Color palets used were http://paletton.com/#uid=13s0u0kesVS1Q+U8OZ7jaQWnkJ1
@@ -286,9 +285,11 @@ li {
     justify-content: space-around;
   }
 
-  header a img {
+  header a,
+  header img {
     height: 2rem;
     width: auto;
+    opacity: 1;
   }
 
   footer {
