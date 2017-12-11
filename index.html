@@ -21,16 +21,16 @@
   <!-- desktop header -->
   <header class="mobile-hide" role="presentation">
     <div class="logo" role="presentation">
-      <img src="resources\images\ic-logo.svg" alt="logo">
+      <img src="resources\images\ic-logo.svg" alt="Comar Academy logo">
       <div class="logo-name" role="presentation">
         <h2><span>COLMAR</span><span>ACADEMY</span></h2>
       </div>
     </div>
     <nav>
-      <ul role="presentation">
-        <li><a href="#" aria-label="Link to information about campus courses">On campus</a></li>
-        <li><a href="#" aria-label="Link to information about online courses">Online</a></li>
-        <li><a href="#" aria-label="Link to information for compaines">For companies</a></li>
+      <ul> <!-- role="presentation"> -->
+        <li><a href="#" aria-label="to information about campus courses">On campus</a></li>
+        <li><a href="#" aria-label="to information about online courses">Online</a></li>
+        <li><a href="#" aria-label="to information for companies">For companies</a></li>
         <li><a href="#">Sign in</a></li>
       </ul>
     </nav>
@@ -41,14 +41,12 @@
   <!-- By creating a second header, it made the code easier to read. The first try was to just add a second <ul> for the items. but I had troubles with formatting them in the @media and the mobile-hide tags weren't working correctly. This made it all much cleaner.
   I also was having a lot of problems with getting the header to fit the width of the mobile screen. I decided to set the position: relative so that it would fit (this is also a common mobile design because of the little amount of space). I couldn't seem to find the problem with why it was hanging off the edge. I think on later reflection, that it wasn't the header at all but the content in the main banner and the header was just fulling the space that caused. -->
   <header class="mobile-show" role="presentation">
+    <img src="resources\images\ic-logo.svg" alt="Colmar Academy logo">
     <a href="#">
-      <img src="resources\images\ic-logo.svg" alt="logo">
+      <img src="resources\images\ic-on-campus.svg" alt="to information about campus courses">
     </a>
     <a href="#">
-      <img src="resources\images\ic-on-campus.svg" alt="On campus">
-    </a>
-    <a href="#">
-      <img src="resources\images\ic-online.svg" alt="Online">
+      <img src="resources\images\ic-online.svg" alt="to information about online courses">
     </a>
     <a href="#">
       <img src="resources\images\ic-login.svg" alt="Sign in">
@@ -74,7 +72,8 @@
         <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
         <div class="start-button">
           <a role="button" href="#">Start here</a>
-          <!-- I had this as just a link. that seemed to break the size of the page though. In putting it in the div, I was able to size the box appropriately and then it would also scale much butter. I also figured out that by using the margins rather than the width, it would force the contents to the correct size. -->
+          <!-- I had this as just a link. that seemed to break the size of the page though. In putting it in the div, I was able to size the box appropriately and then it would also scale much butter. I also figured out that by using the margins rather than the width, it would force the contents to the correct size.
+          This button is probably not correct for ARIA - it will take javascript to fix it. I didn't want to leave it a link though, it isn't. -->
         </div>
       </div>
       <!-- /right -->
@@ -244,7 +243,7 @@
       <!-- mobile curriculum banner -->
       <div class="mobile-show">
         <div class="banner">
-          <ul>
+          <ul role="presentation">
             <li>
               <h2>Software engineering</h2>
             </li>
@@ -280,9 +279,9 @@
 
         <div class="left">
           <div class="video-container">
-            <video src="resources\videos\thesis.mp4" autoplay loop poster="resources\videos\thesis.jpg">
-                Your browser does not support the video tag.
-              </video>
+            <video aria-describedby="Video of a reimagined design of an urban building." src="resources\videos\thesis.mp4" autoplay loop muted poster="resources\videos\thesis.jpg" aria-describedby="Video of a reimagined design of an urban building.">
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div class="text mobile-hide">
             <h2>Reimagine urban</h2>
