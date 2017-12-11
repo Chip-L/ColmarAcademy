@@ -236,6 +236,12 @@ footer {
   margin-bottom: 2rem;
   width: 100%;
   background-color: #F1FAFF;
+  font-size: 0.8rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+  margin: 0;
 }
 
 .logo {
