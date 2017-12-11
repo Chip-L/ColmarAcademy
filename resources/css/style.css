@@ -387,26 +387,9 @@ li {
   #info .info-container:first-child {
     margin-top: 1rem;
   }
-}
 
-/*********** Thesis Banner  ***********/
-
-#thesis .left .text h3 {
-  margin-top: 1.5rem;
-}
-
-#thesis .left .text p {
-  margin-top: 0.5rem;
-}
-
-@media only screen and (max-width: 575px) {
-  #thesis .banner {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  #thesis .banner .right {
-    display: none;
+  #info .info-container:last-child {
+    background-color: inherit;
   }
 }
 
@@ -458,8 +441,33 @@ li {
     background-color: #B8E4FA;
     margin-bottom: 0.5rem;
   }
-  
+
   .banner li:last-child {
     margin-bottom: 1rem;
+  }
+}
+
+/*********** Thesis Banner  ***********/
+
+#thesis .left .text h3 {
+  margin-top: 1.5rem;
+}
+
+#thesis .left .text p {
+  margin-top: 0.5rem;
+}
+
+#thesis .info-container:first-child { /* not ncessary for mobile because it is turned off */
+  background-color: #B8E4FA;
+}
+
+@media only screen and (max-width: 575px) {
+  #thesis .banner {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #thesis .banner .right {
+    display: none;
   }
 }
