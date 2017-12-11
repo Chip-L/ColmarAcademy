@@ -19,18 +19,18 @@
 
 <body>
   <!-- desktop header -->
-  <header class="mobile-hide">
-    <div class="logo">
+  <header class="mobile-hide" role="presentation">
+    <div class="logo" role="presentation">
       <img src="resources\images\ic-logo.svg" alt="logo">
-      <div class="logo-name">
+      <div class="logo-name" role="presentation">
         <h2><span>COLMAR</span><span>ACADEMY</span></h2>
       </div>
     </div>
     <nav>
-      <ul>
-        <li><a href="#">On campus</a></li>
-        <li><a href="#">Online</a></li>
-        <li><a href="#">For companies</a></li>
+      <ul role="presentation">
+        <li><a href="#" aria-label="Link to information about campus courses">On campus</a></li>
+        <li><a href="#" aria-label="Link to information about online courses">Online</a></li>
+        <li><a href="#" aria-label="Link to information for compaines">For companies</a></li>
         <li><a href="#">Sign in</a></li>
       </ul>
     </nav>
@@ -40,7 +40,7 @@
   <!-- mobile header -->
   <!-- By creating a second header, it made the code easier to read. The first try was to just add a second <ul> for the items. but I had troubles with formatting them in the @media and the mobile-hide tags weren't working correctly. This made it all much cleaner.
   I also was having a lot of problems with getting the header to fit the width of the mobile screen. I decided to set the position: relative so that it would fit (this is also a common mobile design because of the little amount of space). I couldn't seem to find the problem with why it was hanging off the edge. I think on later reflection, that it wasn't the header at all but the content in the main banner and the header was just fulling the space that caused. -->
-  <header class="mobile-show">
+  <header class="mobile-show" role="presentation">
     <a href="#">
       <img src="resources\images\ic-logo.svg" alt="logo">
     </a>
