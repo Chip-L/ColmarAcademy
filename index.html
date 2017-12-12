@@ -83,7 +83,6 @@
     <!-- info banner -->
     <div class="banner" id="info">
       <!-- banner title - not used -->
-      <!-- TODO?: refactor css so that there are better controls for the right/left percentages -->
       <div class="left mobile-hide">
         <div class="image-container">
           <img src="resources\images\information-main.jpg" alt="man reading book">
@@ -159,14 +158,15 @@
       <!-- /curriculum banner-title -->
 
       <!-- desktop curriculum banner -->
-      <!-- Adding a div for the mobile-show/hide didn't add anything to the size. It also put the specificity of the tag at the appropriate level; I couldn't hide the mobile list otherwise. -->
+      <!-- Adding a div for the mobile-show/hide didn't add anything to the size. It also put the specificity of the tag at the appropriate level; I couldn't hide the mobile list otherwise.
+      image alt tags are blank for ARRA.-->
       <div class="mobile-hide">
         <div class="banner">
 
           <!-- software engineering -->
           <div class="curriculum-container">
             <div class="image-container">
-              <img src="resources\images\course-software.jpg" alt="Software engineering">
+              <img src="resources\images\course-software.jpg" alt="">
             </div>
             <div class="text">
               <h2>Software engineering</h2>
@@ -178,7 +178,7 @@
           <!-- Computer art -->
           <div class="curriculum-container">
             <div class="image-container">
-              <img src="resources\images\course-computer-art.jpg" alt="Computer art">
+              <img src="resources\images\course-computer-art.jpg" alt="">
             </div>
             <div class="text">
               <h2>Computer art</h2>
@@ -190,7 +190,7 @@
           <!-- Design -->
           <div class="curriculum-container">
             <div class="image-container">
-              <img src="resources\images\course-design.jpg" alt="Design">
+              <img src="resources\images\course-design.jpg" alt="">
             </div>
             <div class="text">
               <h2>Design</h2>
@@ -202,7 +202,7 @@
           <!-- Data -->
           <div class="curriculum-container">
             <div class="image-container">
-              <img src="resources\images\course-data.jpg" alt="Data">
+              <img src="resources\images\course-data.jpg" alt="">
             </div>
             <div class="text">
               <h2>Data</h2>
@@ -214,7 +214,7 @@
           <!-- Business -->
           <div class="curriculum-container">
             <div class="image-container">
-              <img src="resources\images\course-business.jpg" alt="Business">
+              <img src="resources\images\course-business.jpg" alt="">
             </div>
             <div class="text">
               <h2>Business</h2>
@@ -226,7 +226,7 @@
           <!-- Marketing -->
           <div class="curriculum-container">
             <div class="image-container">
-              <img src="resources\images\course-marketing.jpg" alt="Marketing">
+              <img src="resources\images\course-marketing.jpg" alt="">
             </div>
             <div class="text">
               <h2>Marketing</h2>
@@ -279,7 +279,7 @@
 
         <div class="left">
           <div class="video-container">
-            <video aria-describedby="Video of a reimagined design of an urban building." src="resources\videos\thesis.mp4" autoplay loop muted poster="resources\videos\thesis.jpg" aria-describedby="Video of a reimagined design of an urban building.">
+            <video aria-label="Video of a reimagined design of an urban building." src="resources\videos\thesis.mp4" autoplay loop muted poster="resources\videos\thesis.jpg" aria-describedby="Video of a reimagined design of an urban building.">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -336,7 +336,7 @@
       </div>
     </div>
     <nav class="mobile-hide">
-      <ul>
+      <ul role="presentation">
         <li><a href="#">Terms</a></li>
         <li><a href="#">Privacy</a></li>
       </ul>
