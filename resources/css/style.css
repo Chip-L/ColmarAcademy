@@ -1,5 +1,3 @@
-/* TODO: ARIA */
-
 /* colors: School colors are baby blue (#89cff0) and black (#000000) - "arbitrarily" chosen by me since it wasn't specificied. (My school's colors.) Color palets used were http://paletton.com/#uid=13s0u0kesVS1Q+U8OZ7jaQWnkJ1
 and http://paletton.com/#uid=1000u0k00000nfW028N8N02fW0n.
 
@@ -346,6 +344,9 @@ li {
   background-color: #3E9CCA;
   margin-right: 25%;
   min-height: 2rem;
+  /* round the corners and add a little shadow to help it stand out */
+  border-radius: 0.5rem;
+  box-shadow: 0.125rem 0.125rem 0.325rem rgba(0,0,0,0.3);
 }
 
 .start-button a {
